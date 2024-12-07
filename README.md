@@ -1,0 +1,1 @@
+# solar-radiation-measurment
