@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 
 
-data_folder = '../data'
+data_folder = './data'
 
 
 csv_files = [file for file in os.listdir(data_folder) if file.endswith('.csv')]
@@ -45,7 +45,9 @@ for file in csv_files:
     
  
     title = f"Bubble Chart: {x_col} vs {y_col} vs {size_col} ({file})"
+    
     output_file = f"bubble_chart_{file.split('.')[0]}.png"
+    
     create_bubble_chart(df, x_col, y_col, size_col, title, output_file)
     
     print(f"Bubble chart saved as: {output_file}")
